@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pakage_activities.message_activity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_of_family"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layoutkeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="346dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="337dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/keyboard"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Type a Message"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgcamera"
+                        android:layout_width="44dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_camera"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/imgattach"
+                        android:layout_width="42dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_attach" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/btnsend"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_send" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvchatting"
+            android:layout_width="match_parent"
+            android:layout_height="672dp"
+            android:layout_above="@+id/layoutkeyboard"
+            android:layout_marginBottom="10dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

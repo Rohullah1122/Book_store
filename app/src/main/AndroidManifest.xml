@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.book_store">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Book_Store">
+        <activity android:name=".pkgadmin.update_activity"></activity>
+        <activity android:name=".pkgadmin.searchadmnigactivity" />
+        <activity android:name=".pakage_activities.messageact2" />
+        <activity android:name=".pakage_activities.message_activity" />
+        <activity android:name=".pakage_activities.setting_activity" />
+        <activity android:name=".pakage_activities.layout_activity2" />
+        <activity android:name=".pakage_activities.userinfo_activity" />
+        <activity android:name=".pkgadmin.admin_layout" />
+        <activity android:name=".pkgadmin.bookinsertion" />
+        <activity android:name=".pakage_activities.bookinfo_activity" />
+        <activity android:name=".pakage_activities.create_new_ac" />
+        <activity android:name=".pakage_activities.Login_activity" />
+        <activity android:name=".pakage_activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

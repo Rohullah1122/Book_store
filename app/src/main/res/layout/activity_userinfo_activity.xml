@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pakage_activities.userinfo_activity"
+    android:background="@color/ferozaye"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/profileimg"
+       >
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userimage"
+            android:layout_width="215dp"
+            android:layout_height="282dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/profilepic" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:id="@+id/txtnamee"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:inputType="textPersonName"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style_for_sech"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/ptxtmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style_for_sech"
+                android:drawableStart="@drawable/ic_mail"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_mail" />
+            <EditText
+                android:id="@+id/txtlnmae"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:inputType="textPersonName"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style_for_sech"
+                android:gravity="center"
+                android:hint="تخلص"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/ptxtphone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:inputType="phone"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/style_for_sech"
+                android:drawableStart="@drawable/common_full_open_on_phone"
+               android:gravity="center"
+                android:hint="شماره"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/common_full_open_on_phone" />
+
+            <Button
+                android:id="@+id/btn_saves"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="168dp"
+                android:background="@drawable/style_for_sech"
+                android:backgroundTint="@color/lighblue"
+                android:gravity="center"
+                android:text="ذخیره"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

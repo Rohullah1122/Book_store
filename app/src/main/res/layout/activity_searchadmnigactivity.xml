@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pkgadmin.searchadmnigactivity"
+    android:background="@color/black"
+    >
+
+    <AutoCompleteTextView
+        android:id="@+id/txtsearch"
+        android:layout_width="386dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/rv_books"
+        android:background="@drawable/style_for_sech"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_search"
+        android:gravity="center"
+        android:hint="Search Here"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:drawableLeft="@drawable/ic_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_books1"
+        android:layout_width="405dp"
+        android:layout_height="660dp"
+        android:layout_alignBottom="@+id/txtsearch"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsearch"
+        tools:listitem="@layout/layout_updatebook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

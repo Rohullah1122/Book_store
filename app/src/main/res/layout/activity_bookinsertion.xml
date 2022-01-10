@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pkgadmin.bookinsertion"
+    android:background="@color/ferozaye"
+    >
+
+
+    <ImageView
+        android:id="@+id/bimage"
+        android:layout_width="191dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blackbook" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/tvqty"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_for_sech"
+                android:hint="Quantiy"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+            <EditText
+                android:id="@+id/tvbprice"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+
+                android:layout_marginTop="10dp"
+                android:width="1dp"
+                android:background="@drawable/style_for_sech"
+                android:hint="price"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/tvbrating"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:width="1dp"
+                android:background="@drawable/style_for_sech"
+                android:hint="Rating"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/btvpages"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:width="1dp"
+                android:background="@drawable/style_for_sech"
+                android:hint="pages"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tvbname"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="6dp"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="10dp"
+                android:width="1dp"
+                android:textColor="@color/black"
+                android:background="@drawable/style_for_sech"
+                android:hint="Book Name" />
+
+            <EditText
+                android:id="@+id/tvauthor"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_marginLeft="6dp"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="10dp"
+                android:width="1dp"
+                android:textColor="@color/black"
+                android:background="@drawable/style_for_sech"
+                android:hint="Author" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tvbdesc"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="15dp"
+            android:width="1dp"
+            android:textColor="@color/black"
+            android:background="@drawable/style_for_sech"
+            android:hint="Book Describtion" />
+
+
+
+        <Button
+            android:layout_width="359dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/style_for_sech"
+            android:text="Insert"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/btninsertbook"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

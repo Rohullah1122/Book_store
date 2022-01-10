@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pakage_activities.create_new_ac"
+    android:background="@color/orange"
+    android:orientation="vertical"
+    >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:drawableStart="@drawable/ic_username"
+        android:hint="User Name"
+        android:textSize="15sp"
+        android:id="@+id/txtname"
+        android:layout_marginTop="190dp"
+        android:drawableLeft="@drawable/ic_username" />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:drawableStart="@drawable/ic_mail"
+        android:hint="Email Address"
+        android:id="@+id/txtmail"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_mail" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="User Password"
+        android:id="@+id/txtpass"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:drawableLeft="@drawable/ic_lock" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/custom_design"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/lighred"
+        android:drawableLeft="@drawable/custom_design" />
+
+    <Button
+        android:id="@+id/btn_hasacc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lighblue"
+        android:drawableStart="@drawable/custom_design"
+        android:text="Already have acc"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/custom_design" />
+</LinearLayout>

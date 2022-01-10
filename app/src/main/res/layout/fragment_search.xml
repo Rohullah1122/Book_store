@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.fragment_search">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/txtsearch"
+            android:layout_width="386dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:layout_alignTop="@+id/rv_books"
+            android:background="@drawable/style_for_sech"
+            android:drawableStart="@drawable/ic_search"
+            android:gravity="center"
+            android:hint="Search Here"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:drawableLeft="@drawable/ic_search"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_books2"
+            android:layout_width="405dp"
+            android:layout_height="660dp"
+            android:layout_alignBottom="@+id/txtsearch"
+            android:layout_marginTop="50dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtsearch"
+            app:spanCount="2"
+            tools:listitem="@layout/layout_books" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
